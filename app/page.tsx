@@ -128,22 +128,21 @@ export default function Page() {
                 description="A machine learning web app built with Streamlit to predict if a cell cluster is benign or malignant."
                 image="/Breast_Cancer_Predictor.png?height=400&width=600"
                 link="https://github.com/asmamest/Breast_Cancer_Predictor.git"
-                link="https://github.com/asmamest/Breast_Cancer_Predictor.git"
                 tags={["Streamlit", "Python", "Machine Learning"]}
               />
               <ProjectCard
-                title="Sentiment Analysis API"
-                description="A REST API for real-time sentiment analysis of text using BERT and Spring Boot."
-                image="/placeholder.svg?height=400&width=600"
-                link="https://github.com"
-                tags={["NLP", "Spring Boot", "BERT"]}
+                title="AI/ML Football Analysis system"
+                description="Football analysis using YOLO, OpenCV, and Python. Detects and tracks players, refs, and the ball. Uses KMeans for team assignment, optical flow for camera motion, and perspective transform to measure player speed and distance."
+                image="/aiml_football.png?height=400&width=600"
+                link="#"
+                tags={["YOLO", "OpenCV", "Computer Vision", "Deep Learning", "Python"]}
               />
               <ProjectCard
-                title="Predictive Analytics Dashboard"
-                description="An interactive dashboard for visualizing predictive models built with Angular and D3.js."
-                image="/placeholder.svg?height=400&width=600"
-                link="https://github.com"
-                tags={["Angular", "D3.js", "Machine Learning"]}
+                title="Sentiment Analysis & Emotion Recognition"
+                description="Built with Hugging Face for question generation and scoring, and DeepFace for real-time facial emotion recognition."
+                image="/Emotions.png?height=400&width=600"
+                link="#"
+                tags={["NLP", "Hugging Face", "DeepFace", "Emotion Recognition"]}
               />
             </div>
           </div>
