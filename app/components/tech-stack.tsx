@@ -3,23 +3,29 @@ import { Card } from "@/components/ui/card"
 const technologies = [
   {
     category: "Programming Languages",
-    skills: ["Python", "C", "C++", "Java", "JavaScript"]
+    skills: ["Python", "C", "C++", "Java", "JavaScript", "TypeScript"]
   },
   {
     category: "Machine Learning",
-    skills: ["TensorFlow", "PyTorch", "Scikit-learn", "Keras", "Data Preprocessing"]
+    skills: ["TensorFlow", "PyTorch", "Scikit-learn", "Keras","XGBoost", "LightGBM", "CatBoost",
+      "Data Preprocessing", "Feature Engineering",
+      "Model Evaluation", "Hyperparameter Tuning"]
   },
   {
     category: "Natural Language Processing",
-    skills: ["Hugging Face Transformers", "NLTK"]
+    skills: ["Hugging Face Transformers", "NLTK", "SpaCy", "BERT", "GPT", "TextBlob"]
   },
   {
     category: "Computer Vision",
-    skills: ["YOLOv8", "OpenCV", "DeepFace"]
+    skills: ["YOLOv8", "OpenCV", "DeepFace","CNNs"]
+  },
+  {
+    category: "Data Analysis & Visualization",
+    skills: ["Pandas", "NumPy", "Matplotlib", "Seaborn", "Plotly", "Power BI", "Tableau"]
   },
   {
     category: "Database Management",
-    skills: ["Oracle", "MySQL", "MongoDB"]
+    skills: ["Oracle", "MySQL", "MongoDB", "PostgreSQL"]
   },
   {
     category: "Version Control",
@@ -28,6 +34,10 @@ const technologies = [
   {
     category: "Web Development",
     skills: ["HTML", "CSS", "React", "Angular"]
+  },
+  {
+    category: "Cloud & DevOps",
+    skills: ["Docker"]
   },
 ]
 

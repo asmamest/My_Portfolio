@@ -29,87 +29,42 @@ interface GalleryItem {
 const galleryItems: GalleryItem[] = [
   {
     id: "reading-1",
-    title: "Book Collection",
-    description: "My growing collection of science fiction and philosophy books.",
-    image: "/placeholder.svg?height=600&width=800",
+    title: "Life 3.0: Being Human in the Age of Artificial Intelligence - Max Tegmark",
+    description: "A profound exploration of the possible futures shaped by AI, addressing ethical challenges and how this transformative technology could redefine humanity. From this book, I gained a deep understanding of AI's potential impacts on society, the importance of aligning AI development with human values, and the critical need for responsible innovation to ensure a beneficial coexistence between humans and intelligent machines.",
+    image: "/life_3_0.png?height=600&width=800",
     category: "reading",
-    date: "December 2023",
-  },
-  {
-    id: "volunteer-1",
-    title: "Community Tech Workshop",
-    description: "Volunteering to teach basic programming to kids in my community.",
-    image: "/placeholder.svg?height=600&width=800",
-    category: "volunteer",
-    date: "January 2024",
-  },
-  {
-    id: "event-1-photo-1",
-    title: "AI Conference 2023",
-    description: "Participating in panel discussions about the future of AI ethics.",
-    image: "/placeholder.svg?height=600&width=800",
-    category: "events",
-    date: "October 2023",
-    eventId: "ai-conf-2023",
-  },
-  {
-    id: "event-1-photo-2",
-    title: "AI Conference 2023 - Workshop",
-    description: "Leading a workshop on neural networks for beginners.",
-    image: "/placeholder.svg?height=600&width=800",
-    category: "events",
-    date: "October 2023",
-    eventId: "ai-conf-2023",
-  },
-  {
-    id: "event-1-photo-3",
-    title: "AI Conference 2023 - Networking",
-    description: "Meeting with industry professionals and researchers.",
-    image: "/placeholder.svg?height=600&width=800",
-    category: "events",
-    date: "October 2023",
-    eventId: "ai-conf-2023",
+    date: "August 2024"
+  },{
+    id: "reading-2",
+    title: "Artificial Intelligence: A Guide for Thinking Humans - Melanie Mitchell",
+    description: "This book offers a clear and balanced overview of AI, demystifying its capabilities and limitations. From reading it, I learned to critically evaluate AI hype, appreciate the complexity of human-like intelligence, and understand the challenges in creating truly intelligent machines. It reinforced the importance of ethical AI development and thoughtful integration of AI in society.",
+    image: "/ai_guide.png?height=600&width=800",
+    category: "reading",
+    date: "February 2025"
+  },{
+    id: "reading-3",
+    title: "The Power of Now - Eckhart Tolle",
+    description: "A groundbreaking book in personal development that focuses on the awareness of the present moment and its profound impact on life quality. Through reading it, I learned how to manage negative thoughts, enhance focus, and cultivate inner calm—skills that greatly support my academic and professional success.",
+    image: "/power.png?height=600&width=800",
+    category: "reading",
+    date: "April 2024"
   },
   {
     id: "event-2-photo-1",
-    title: "Hackathon 2024",
-    description: "Working with my team on an AI solution for healthcare.",
-    image: "/placeholder.svg?height=600&width=800",
+    title: "Launch of Q-AI Cell @ ENICarthage",
+    description: "A new era begins at ENICarthage with the official launch of the Q-AI Cell (Quantum & Artificial Intelligence Cell). This initiative marks a bold step into the future of quantum computing and AI. I proudly participated in this milestone event, celebrated through a strategic partnership with Talan Tunisie—bridging academic ambition with industry innovation. The experience filled me with pride, inspiration, and hope for the future of tech in Tunisia.",
+    image: "/1746519861333.jpg?height=600&width=800",
     category: "events",
-    date: "February 2024",
-    eventId: "hackathon-2024",
-  },
-  {
-    id: "event-2-photo-2",
-    title: "Hackathon 2024 - Presentation",
-    description: "Presenting our solution to the judges.",
-    image: "/placeholder.svg?height=600&width=800",
-    category: "events",
-    date: "February 2024",
-    eventId: "hackathon-2024",
-  },
-  {
-    id: "reading-2",
-    title: "Philosophy Corner",
-    description: "My favorite philosophical works that inspire my approach to AI ethics.",
-    image: "/placeholder.svg?height=600&width=800",
-    category: "reading",
-    date: "March 2024",
-  },
-  {
-    id: "volunteer-2",
-    title: "Mentoring Program",
-    description: "Mentoring young women interested in STEM careers.",
-    image: "/placeholder.svg?height=600&width=800",
-    category: "volunteer",
-    date: "April 2024",
-  },
+    date: "May 2025",
+    eventId: "qai-launch-enic"
+  }
+
 ]
 
 const categories = [
   { id: "all", label: "All", icon: <Heart className="h-4 w-4" /> },
   { id: "reading", label: "Reading", icon: <Book className="h-4 w-4" /> },
-  { id: "volunteer", label: "Volunteering", icon: <Heart className="h-4 w-4" /> },
+  /*{ id: "volunteer", label: "Volunteering", icon: <Heart className="h-4 w-4" /> },*/
   { id: "events", label: "Events", icon: <Camera className="h-4 w-4" /> },
 ]
 
@@ -254,9 +209,6 @@ export default function PersonalGallery() {
         )}
       </Dialog>
 
-      <div className="flex justify-center mt-8">
-        <Button variant="outline">View More Photos</Button>
-      </div>
     </div>
   )
 }

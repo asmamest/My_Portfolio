@@ -24,7 +24,7 @@ export default function Page() {
         <div className="container flex h-14 items-center">
           <div className="mr-4 hidden md:flex">
             <Link className="mr-6 flex items-center space-x-2" href="/">
-              <span className="hidden font-bold sm:inline-block">Asma.AI</span>
+              <span className="hidden font-bold sm:inline-block">A.</span>
             </Link>
             <nav className="flex items-center space-x-6 text-sm font-medium">
               <Link href="#about" className="transition-colors hover:text-foreground/80">
@@ -47,10 +47,7 @@ export default function Page() {
               </Link>
             </nav>
           </div>
-          <div className="ml-auto flex items-center gap-2">
-            <ThemeToggle />
-            <Button variant="outline">Resume</Button>
-          </div>
+
         </div>
       </header>
 
@@ -76,31 +73,25 @@ export default function Page() {
                 </p>
               </div>
               <div className="space-x-4">
-                <Link href="https://github.com" target="_blank">
+                <Link href="https://github.com/asmamest" target="_blank">
                   <Button variant="outline" size="icon">
                     <Github className="h-4 w-4" />
                     <span className="sr-only">GitHub</span>
                   </Button>
                 </Link>
-                <Link href="https://linkedin.com" target="_blank">
+                <Link href="https://linkedin.com/in/mestaysserasma" target="_blank">
                   <Button variant="outline" size="icon">
                     <Linkedin className="h-4 w-4" />
                     <span className="sr-only">LinkedIn</span>
                   </Button>
                 </Link>
-                <Link href="https://twitter.com" target="_blank">
-                  <Button variant="outline" size="icon">
-                    <Twitter className="h-4 w-4" />
-                    <span className="sr-only">Twitter</span>
-                  </Button>
-                </Link>
-                <Link href="https://instagram.com" target="_blank">
+                <Link href="https://instagram.com/asma_mestaysser" target="_blank">
                   <Button variant="outline" size="icon">
                     <Instagram className="h-4 w-4" />
                     <span className="sr-only">Instagram</span>
                   </Button>
                 </Link>
-                <Link href="mailto:asma@example.com">
+                <Link href="mestaysserasma@gmail.com">
                   <Button variant="outline" size="icon">
                     <Mail className="h-4 w-4" />
                     <span className="sr-only">Email</span>
@@ -124,6 +115,58 @@ export default function Page() {
             <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl mb-12 text-center">Projects</h2>
             <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
               <ProjectCard
+                  title="Automated Exam Status Management Platform — ENICarthage Collaboration"
+                  description={
+                    `Developed in collaboration with the Academic Affairs Directorate at ENICarthage, this web platform automates and streamlines the tracking of exam statuses within an academic environment.
+- Replaces a slow, manual, and non-transparent process with a centralized solution.
+- Offers real-time dashboards and automated notifications.
+- Features an intuitive interface enhancing communication between teachers and administration.`
+                  }
+
+                  image="/enicarthage_exam_management_advanced.png?height=400&width=600"
+                  link="#"
+                  tags={[
+                    "Spring Boot",
+                    "Angular",
+                    "Docker",
+                    "Docker-Compose",
+                    "CI/CD Pipeline",
+                    "Jenkins",
+                    "JWT",
+                    "Spring Security",
+                    "Role-Based Access Control",
+                    "CORS",
+                    "MySQL",
+                    "Web Application",
+                    "Automated Workflow",
+                    "DevOps",
+                    "Team Project"
+                  ]}
+              />
+              <ProjectCard
+                  title="BookMyShow — Mobile Ticket Booking App"
+                  description={`BookMyShow is a user-friendly mobile app designed to help users discover shows effortlessly through smart search, photos, and geolocation.\n
+Users can quickly and securely book tickets and manage their reservations based on their profiles.\n
+Registered users gain access to exclusive promotions.\n
+The app prioritizes the protection of personal data and ensures secure transactions for a trustworthy experience.`}
+                  image="/bookmyshow_app_screenshot.png?height=400&width=600"
+                  link="#"
+                  tags={[
+                    "Java",
+                    "Android Studio",
+                    "Spring Boot",
+                    "MySQL",
+                    "REST API",
+                    "Mobile App",
+                    "Secure Transactions",
+                    "User Experience",
+                    "Agile",
+                    "3-Tier Architecture"
+                  ]}
+              />
+
+
+              <ProjectCard
                 title="ML Cell Cluster Classifier"
                 description="A machine learning web app built with Streamlit to predict if a cell cluster is benign or malignant."
                 image="/Breast_Cancer_Predictor.png?height=400&width=600"
@@ -131,10 +174,17 @@ export default function Page() {
                 tags={["Streamlit", "Python", "Machine Learning"]}
               />
               <ProjectCard
+                  title=" Heart Disease Prediction – Data Analysis Project"
+                  description="A complete data analysis was performed on a heart disease dataset to extract insights and predict risk factors. The workflow included data cleaning, exploratory data analysis (EDA), and dimensionality reduction using PCA. Clustering techniques such as KMeans and Agglomerative Hierarchical Clustering (AHC) were applied to segment patient profiles."
+                  image="/heart.jpg?height=400&width=600"
+                  link="https://github.com/asmamest/Predicting-Heart-Disease.git"
+                  tags={["Data Science", "Heart Disease Prediction", "EDA", "PCA", "KMeans", "Hierarchical Clustering", "Machine Learning", "Python", "Healthcare AI"]}
+              />
+              <ProjectCard
                 title="AI/ML Football Analysis system"
                 description="Football analysis using YOLO, OpenCV, and Python. Detects and tracks players, refs, and the ball. Uses KMeans for team assignment, optical flow for camera motion, and perspective transform to measure player speed and distance."
                 image="/aiml_football.png?height=400&width=600"
-                link="#"
+                link="https://github.com/asmamest/AI-ML-Football-Analysis-system.git"
                 tags={["YOLO", "OpenCV", "Computer Vision", "Deep Learning", "Python"]}
               />
               <ProjectCard
@@ -144,6 +194,7 @@ export default function Page() {
                 link="#"
                 tags={["NLP", "Hugging Face", "DeepFace", "Emotion Recognition"]}
               />
+
             </div>
           </div>
         </section>
@@ -167,11 +218,6 @@ export default function Page() {
           </div>
         </section>
 
-        <section id="recommendations" className="py-12 md:py-24 lg:py-32 bg-muted/30">
-          <div className="container px-4 md:px-6">
-            <RecommendationsNetwork />
-          </div>
-        </section>
 
         <section id="blog" className="py-12 md:py-24 lg:py-32 bg-muted/50">
           <div className="container px-4 md:px-6">
@@ -180,39 +226,52 @@ export default function Page() {
               <p className="mx-auto max-w-[700px] text-gray-500 md:text-xl dark:text-gray-400">
                 Thoughts, tutorials, and insights on AI, ML, and data science.
               </p>
-              <Link href="/blog">
-                <Button variant="outline">View All Posts</Button>
-              </Link>
+              <p className="text-sm text-muted-foreground">Click on any article to read the full post on LinkedIn</p>
             </div>
             <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
               <BlogPreview
-                title="Understanding Transformer Architecture"
-                excerpt="A deep dive into the architecture that powers modern language models like GPT and BERT."
-                date="April 15, 2024"
-                image="/placeholder.svg?height=400&width=600"
-                slug="understanding-transformer-architecture"
-                tags={["NLP", "Deep Learning"]}
+                  title="Anomaly Detection in Chemical Engineering - Part 2"
+                  excerpt="In the first article of this series, we explored the growing importance of predictive maintenance in the age of AI, particularly in chemical and industrial processes. "
+                  date="February 18, 2025"
+                  image="/1739459208960.png?height=400&width=600"
+                  linkedinUrl="https://www.linkedin.com/pulse/tennessee-eastman-process-open-source-benchmark-asma-mestaysser-k8u1f/?trackingId=Pc%2Bz7qnM%2BLKO4pt2p4qiGw%3D%3D"
+                  tags={["Machine Learning",
+                    "Anomaly Detection",
+                    "Fault Detection",
+                    "PCA",
+                    "Autoencoders",
+                    "LSTM",
+                    "Isolation Forest"]}
               />
               <BlogPreview
-                title="Implementing K-means Clustering from Scratch"
-                excerpt="A step-by-step guide to implementing the K-means clustering algorithm in Python."
-                date="March 28, 2024"
-                image="/placeholder.svg?height=400&width=600"
-                slug="implementing-kmeans-clustering"
-                tags={["Clustering", "Python"]}
+                  title="What if AI could predict chemical process failures before they happen?"
+                  excerpt="During my summer internship at OMV, I had the chance to explore the fascinating world of chemical processes on-site. But one question kept me thinking: How can we optimize and maintain these processes while integrating cutting-edge AI technologies?"
+                  date="February 13, 2025"
+                  image="/1739459208960.png?height=400&width=600"
+                  linkedinUrl="https://www.linkedin.com/pulse/introduction-anomaly-detection-chemical-engineering-asma-mestaysser-rcxlf/?trackingId=SZ1LX8Olp3FVx0uBnVHabQ%3D%3D"
+                  tags={["Anomaly Detection",
+                    "Tennessee Eastman Process",
+                    "Data Science",
+                    "Machine Learning",
+                    "Fault Detection",
+                    "Statistical Methods",
+                    "Oil and Gas"]}
               />
               <BlogPreview
-                title="Ethics in AI: Bias in Machine Learning Models"
-                excerpt="Exploring the ethical implications of bias in machine learning models and how to mitigate it."
-                date="February 10, 2024"
-                image="/placeholder.svg?height=400&width=600"
-                slug="ethics-in-ai-bias"
-                tags={["Ethics", "AI"]}
+                  title="Can Machines Think and Act in Non-Human Ways? "
+                  excerpt="In the world of AI and automation, we often ask: Can machines interact with the world in ways that are truly non-human? Can they think and decide in ways that break free from our human limitations?"
+                  date="October 28, 2024"
+                  image="/1724392363177.jpg?height=400&width=600"
+                  linkedinUrl="https://www.linkedin.com/posts/mestaysserasma_ai-innovation-autonomoussystems-activity-7232625793879670784-r2e5?utm_source=share&utm_medium=member_desktop&rcm=ACoAADVQeJYB2bpv4KZlrIypUAJclYmuYNYEI2Y"
+                  tags={[ "AI",
+                    "Machine Thinking",
+                    "Non-Human AI",
+                    "AlphaGo"]}
               />
+
             </div>
           </div>
         </section>
-
         <section id="vision" className="py-12 md:py-24 lg:py-32 bg-muted/30">
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-4 text-center mb-12">
@@ -221,7 +280,7 @@ export default function Page() {
                 Where I see myself in the next 5 to 10 years, my professional goals and aspirations.
               </p>
             </div>
-            <FutureVision />
+            <FutureVision/>
           </div>
         </section>
 
@@ -232,41 +291,53 @@ export default function Page() {
             </h2>
             <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
               <TestimonialCard
-                quote="Asma's machine learning expertise helped us reduce prediction errors by 35%. Her ability to explain complex concepts in simple terms is remarkable."
-                author="Dr. Emily Chen"
-                role="AI Research Lead, TechInnovate"
-                image="/placeholder.svg?height=100&width=100"
+                  quote="It was nice meeting you , good luck in your future endeavors!"
+                  author="
+Manai Mohamed Mortadha"
+                  role="AI Engineer |AI Expert |XAI Engineer @Netflix"
+                  image="/1730842613045.jpg?height=100&width=100"
               />
               <TestimonialCard
-                quote="Working with Asma on our NLP project was a game-changer. Her deep understanding of transformer models and attention mechanisms elevated our entire approach."
-                author="Prof. Michael Johnson"
-                role="Computer Science Department, MIT"
-                image="/placeholder.svg?height=100&width=100"
+                  quote="Congratulations! You did an excellent job with the internship, and we are confident that as you continue on your path to success."
+                  author="Houssem Haouali"
+                  role="Expert System Engineer - OMV Tunisia"
+                  image="/1726136390212.jpg?height=100&width=100"
               />
               <TestimonialCard
-                quote="Asma's contribution to our computer vision project was exceptional. She not only delivered high-quality code but also provided valuable insights that improved our model's performance."
-                author="Alex Rodriguez"
-                role="Senior Data Scientist, AI Solutions Inc."
-                image="/placeholder.svg?height=100&width=100"
+                  quote="Dear Asma, it was nice meeting you and kudos on winning the quiz. This gives me the comfort and optimism that our Tunisian future leaders and colleagues are engaged! Please drop by whenever you are in Tunis."
+                  author="Thomas Gieles"
+                  role="General Manager - OMV Tunisia"
+                  image="/1527345665519.jpg?height=100&width=100"
+              />
+              <TestimonialCard
+                  quote="It is my pleasure to recommend Ms Asma Moustaysser for computer engineering. I came to know Asma when she was a trainer in OMV Waha field. During internship, Asma distinguished herself by submitting an exceptionally well researched and interesting project on optimization of control systems with Flowboss FB 1200 and Prosoft PLX31-EIP-MBS4. Overall, Asma is highly intelligent and has good analytical skills. Her project demonstrated her ability to come a detailed understanding of computer engineering. "
+                  author="Mabrouki Abdelbasset"
+                  role="Mechanical Construction Superintendent"
+                  image="/1516943159098.jpg?height=100&width=100"
               />
             </div>
           </div>
         </section>
 
-        <section id="contact" className="py-12 md:py-24 lg:py-32">
-          <div className="container px-4 md:px-6">
-            <div className="flex flex-col items-center justify-center space-y-4 text-center mb-12">
-              <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Let's Collaborate</h2>
-              <p className="mx-auto max-w-[700px] text-gray-500 md:text-xl dark:text-gray-400">
-                Interested in working together or have questions? Get in touch with me.
-              </p>
-            </div>
-            <div className="grid gap-8 md:grid-cols-2">
-              <ContactForm />
-              <FeedbackForm />
-            </div>
-          </div>
-        </section>
+        {/*
+<section id="contact" className="py-12 md:py-24 lg:py-32">
+  <div className="container px-4 md:px-6">
+    <div className="flex flex-col items-center justify-center space-y-4 text-center mb-12">
+      <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
+        Let's Collaborate
+      </h2>
+      <p className="mx-auto max-w-[700px] text-gray-500 md:text-xl dark:text-gray-400">
+        Interested in working together or have questions? Get in touch with me.
+      </p>
+    </div>
+    <div className="grid gap-8 md:grid-cols-2">
+      <ContactForm />
+      <FeedbackForm />
+    </div>
+  </div>
+</section>
+*/}
+
 
         <section id="code-breaker" className="py-12 md:py-24 lg:py-32 bg-muted/20">
           <div className="container px-4 md:px-6">
@@ -283,7 +354,7 @@ export default function Page() {
 
       <footer className="border-t">
         <div className="container flex flex-col gap-2 sm:flex-row py-6 w-full shrink-0 items-center px-4 md:px-6">
-          <p className="text-xs text-gray-500 dark:text-gray-400">© 2024 Asma Mestaysser. All rights reserved.</p>
+          <p className="text-xs text-gray-500 dark:text-gray-400">© 2025 Asma Mestaysser. All rights reserved.</p>
           <nav className="sm:ml-auto flex gap-4 sm:gap-6">
             <Link className="text-xs hover:underline underline-offset-4" href="#">
               Terms of Service
