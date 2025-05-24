@@ -62,11 +62,6 @@ export default function Page() {
                 <p className="text-xl text-purple-600 dark:text-purple-400 font-medium">
                   Computer Engineering Student | AI/ML Specialization
                 </p>
-                <div className="flex items-center justify-center mt-2">
-                  <span className="inline-flex items-center rounded-md bg-green-50 px-3 py-1 text-sm font-medium text-green-700 ring-1 ring-inset ring-green-600/20 dark:bg-green-900/30 dark:text-green-400 dark:ring-green-500/20">
-                    <span className="mr-1">🇵🇸</span> Supporting Palestine
-                  </span>
-                </div>
                 <p className="mx-auto max-w-[700px] text-gray-500 md:text-xl dark:text-gray-400 mt-4">
                   Passionate about artificial intelligence and machine learning. I develop innovative solutions to solve
                   real-world problems and shape the future of technology.
